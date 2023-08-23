@@ -1,0 +1,42 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    padding: 0 20px;
+    text-align: center;
+
+}
+
+.home-button {
+    background-color: #6389be;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+.home-button:hover {
+  transform: scale(1.05);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Adjust the gap between logo and heading */
+}
+
+.logo-image {
+    width: 105px;
+    padding: 0 0 0 10px;
+    /* Adjust the logo width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+

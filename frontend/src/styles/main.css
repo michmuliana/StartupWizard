@@ -1,0 +1,19 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 0px 3px 3px rgba(133, 131, 131, 0.7);
+}
+
+h2 {
+    font-size: 40px;
+    text-shadow: 0px 3px 3px rgba(133, 131, 131, 0.7);
+}
+
+p {
+    font-size: 18px;
+}

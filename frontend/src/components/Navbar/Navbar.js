@@ -6,7 +6,7 @@ function Navbar() {
   const[activeLink, setActiveLink] = useState('');
           return (
             <nav className="navbar">
-              <div className="logo">StartupWizard</div>
+              <div className="logo"></div>
               <ul className="nav-links">
                 <li>
                   <Link exact to="/" className={activeLink === 'home'? 'active' : ''} onClick={()=> setActiveLink('home')}>
