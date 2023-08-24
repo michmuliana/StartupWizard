@@ -1,6 +1,6 @@
 /* Navbar.css */
 .navbar {
-    background-color: white;
+
     color: black;
     font-family: 'Lato', sans-serif;
     display: flex;
@@ -43,5 +43,5 @@
 }
 
 .nav-links a.active {
-    background-color: #aad6ff;
+    background-color: #79b2e6;
 }

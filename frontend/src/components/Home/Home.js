@@ -7,7 +7,7 @@ function Home() {
       <div className="logo-container">
         <h1>StartupWizard</h1>
         <img
-          src={process.env.PUBLIC_URL + "/images/startupwizard-logo.png"}
+          src={process.env.PUBLIC_URL + "/images/logo.png"}
           alt="StartupWizard Logo"
           className="logo-image"
         />
