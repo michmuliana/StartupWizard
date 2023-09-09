@@ -5,21 +5,31 @@ import Home from './components/Home/Home';
 import Form from './components/Form/Form';
 import About from './components/About/About';
 import './styles/main.css';
-import axios from 'axios';
 
 function App() {
-  const [data, setData] = useState([]);
+
+  const [data, setData] = useState([])
+  
+  useEffect(() => {
+    console.log(process.env.REACT_APP_API_URL)
+  }, []); 
 
   useEffect(() => {
-    axios
-      .get("http://127.0.0.1:8000/api/get_data/")
-      .then((response) => {
-        setData(response.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, []); // Empty dependency array means the effect runs only once after mount
+    async function fetchData() {
+      console.log(process.env.REACT_APP_API_URL)
+      try {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}`);
+        if(!Response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const result = await Response.json();
+        console.log(result)
+        setData(result);
+      } catch (error) {
+        console.error('Error fetching data', error);
+      }
+    }
+  })
 
   return (
     <div className="App">
